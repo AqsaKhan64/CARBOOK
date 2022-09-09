@@ -504,7 +504,10 @@ textarea{
     height: 140px;
     z-index: -1;
     top: -10px;
-    display: none;
+    transform: scale(0);
+}
+.main-price-card:hover .sub-p-card{
+   transform: scale(1);
 }
 .p-btn{
     margin: 56px 30px;
@@ -537,4 +540,10 @@ textarea{
     // position: absolute;
     // top: -10px;
     padding: 35px 0px;
+}
+.m-price{
+    margin-left: 3px;
+}
+.m-price2{
+    margin-left: 6px;
 }
