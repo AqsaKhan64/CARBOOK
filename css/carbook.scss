@@ -458,3 +458,83 @@ textarea{
 .cntct-info{
     margin-left: 10px;
 }
+// Css of Pricing page
+.pricing-img{
+    width: 200px;
+}
+.rate-icon{
+    color: $lightgreen;
+    font-size: 12px;
+}
+.rate-icon2{
+    color: silver;
+    @extend .rate-icon
+}
+.pricing-card{
+    background-color: $lightblue;
+    height: 90px;
+    width: 190px;
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 50% 100%, 0 89%);
+}
+.pricing-card3{
+    background: black;
+    @extend .pricing-card
+}
+.pricing-card2{
+    height: 90px;
+    width: 190px;
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 50% 100%, 0 89%);
+}
+.main-price-card{
+    position: relative;
+}
+.sub-price-card{
+    background-color: lightgrey;
+    width: 190px;
+    height: 140px;
+    z-index: -1;
+    position: absolute;
+    top: -10px;
+    padding: 35px 0px;
+}
+.sub-p-card{
+    position: absolute;
+    background: #01d28e;
+    width: 190px;
+    height: 140px;
+    z-index: -1;
+    top: -10px;
+    display: none;
+}
+.p-btn{
+    margin: 56px 30px;
+}
+.pricing-btn{
+    background: $lightblue;
+    background: #1089ff;
+    border-radius: 5px;
+    padding: 10px 17px;
+}
+.pr-info{
+    color: $lightblue;
+}
+.sub-pr-info{
+    font-size: 14px;
+}
+.sign{
+    font-size: 12px;
+    position: absolute;
+    left: 31px;
+}
+.time{
+    font-size: 14px;
+}
+.sub-price-card2{
+    background-color: lightgrey;
+    width: 190px;
+    height: 140px;
+    // z-index: -1;
+    // position: absolute;
+    // top: -10px;
+    padding: 35px 0px;
+}
