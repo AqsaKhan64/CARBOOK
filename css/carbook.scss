@@ -69,6 +69,10 @@ $lightblue: #1089ff;
         background-color: transparent;
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
+    input::placeholder
+    {
+        color: white;
+    }
     input:focus{
         background-color: transparent;
         outline: none;
