@@ -553,9 +553,9 @@ textarea{
     font-size: 14px;
 }
 .sign{
-    font-size: 12px;
+    font-size: 13px;
     position: absolute;
-    left: 31px;
+    left: 45px;
 }
 .time{
     font-size: 14px;
@@ -602,4 +602,10 @@ textarea{
 .price-head{
     margin-top: 30px;
     font-size: 19px;
+}
+.scroll{
+    overflow-x: scroll;
+    width: 74%;
+    margin-top: 70px;
+    margin-left: 211px;
 }
