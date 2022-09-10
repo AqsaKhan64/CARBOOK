@@ -464,7 +464,7 @@ textarea{
 }
 // Css of Pricing page
 .pricing-img{
-    width: 200px;
+    width: 195px;
 }
 .rate-icon{
     color: $lightgreen;
@@ -477,8 +477,10 @@ textarea{
 .pricing-card{
     background-color: $lightblue;
     height: 90px;
-    width: 190px;
+    width: 215px;
     clip-path: polygon(0 0, 100% 0%, 100% 89%, 50% 100%, 0 89%);
+    position: absolute;
+    z-index: 1;
 }
 .pricing-card3{
     background: black;
@@ -486,35 +488,57 @@ textarea{
 }
 .pricing-card2{
     height: 90px;
-    width: 190px;
+    width: 215px;
     clip-path: polygon(0 0, 100% 0%, 100% 89%, 50% 100%, 0 89%);
+    position: absolute;
+    z-index: 1;
 }
 .main-price-card{
     position: relative;
 }
 .sub-price-card{
-    background-color: lightgrey;
-    width: 190px;
-    height: 140px;
-    z-index: -1;
+    background: rgba(0,0,0,.05);
+    width: 215px;
+    height: 150px;
     position: absolute;
-    top: -10px;
+    top: 80px;
     padding: 35px 0px;
 }
-.sub-p-card{
-    position: absolute;
-    background: #01d28e;
-    width: 190px;
-    height: 140px;
-    z-index: -1;
-    top: -10px;
-    transform: scale(0);
-}
-.main-price-card:hover .sub-p-card{
-   transform: scale(1);
-}
 .p-btn{
-    margin: 56px 30px;
+    margin-top: 51px;
+    margin-left: 38px;
+}
+.sub-p-card{
+    background: $lightgreen;
+    width: 215px;
+    height: 150px;
+    top: 79px;
+    position: absolute;
+    opacity: 0;
+}
+.sub-p-card2{
+    top: 231px;
+    @extend .sub-p-card
+}
+.sub-p-card3{
+    top: 382px;
+    @extend .sub-p-card
+}
+.sub-p-card4{
+    top: 533px;
+    @extend .sub-p-card
+    }
+    .sub-p-card5{
+        top: 684px;
+        @extend .sub-p-card
+    }
+    .sub-p-card6{
+        top: 835px;
+        @extend .sub-p-card
+    }
+.sub-p-card:hover{
+    opacity: 1;
+    transition: 0.4s;
 }
 .pricing-btn{
     background: $lightblue;
@@ -537,17 +561,45 @@ textarea{
     font-size: 14px;
 }
 .sub-price-card2{
-    background-color: lightgrey;
-    width: 190px;
-    height: 140px;
-    // z-index: -1;
-    // position: absolute;
-    // top: -10px;
-    padding: 35px 0px;
+  top: 231px;
+  @extend .sub-price-card
 }
-.m-price{
-    margin-left: 3px;
+.sub-price-card3{
+    top: 382px;
+    @extend .sub-price-card
 }
-.m-price2{
-    margin-left: 6px;
+.sub-price-card4{
+    top: 533px;
+    @extend .sub-price-card
+}
+.sub-price-card5{
+    top: 684px;
+    @extend .sub-price-card
+}
+.sub-price-card6{
+    top: 835px;
+    @extend .sub-price-card
+}
+.pricing-info{
+    margin-top: 116px;
+    margin-left: 30px;
+}
+.car-red-price{
+    margin-top: 89px;
+    margin-left: 143px;
+}
+.hour-rate{
+    margin-left: -98px;
+}
+.pricing-info2{
+    margin-top: 97px;
+    margin-left: 32px;
+}
+.car-white-price{
+    margin-top: 32px;
+    margin-left: 144px;
+}
+.price-head{
+    margin-top: 30px;
+    font-size: 19px;
 }
