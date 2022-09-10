@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;200;400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
 $lightgreen: #01d28e;
 $white: white;
 $lightblue: #1089ff;
@@ -13,6 +16,14 @@ $lightblue: #1089ff;
     }
     li{
         padding: 5px 15px;
+    }
+}
+.carousel-indicators{
+    button{
+    background-color: #e6e6e6 !important;
+    border-radius: 50% !important;
+    width: 13px !important;
+    height: 13px !important;
     }
 }
 .car-banner::before{
@@ -33,9 +44,11 @@ $lightblue: #1089ff;
 }
 .ban-head{
     margin-top: 160px;
+    font-weight: 700;
 }
 .ban-info{
     font-size: 18px;
+    font-weight: 500;
 }
 .video-icon{
     color: $white;
@@ -106,22 +119,49 @@ $lightblue: #1089ff;
 }
 .main-icon{
     border: 1px solid #0000000d;
+    margin-left: 115px;
+    height: 84px;
+    width: 36%;
     border-radius: 50%;
-    height: 85px;
-    width: 41%;
 }
 .frm-icon{
-    width: 48%;
-    margin-left: 22px;
-    margin-top: 20px;
+    width: 40%;
+    margin-left: 25px;
+    margin-top: 22px;
+    filter: invert(39%) sepia(99%) saturate(2435%) hue-rotate(193deg) brightness(101%) contrast(101%);
+}
+.slider-img{
+    background-image: url('../images/car5.webp');
+    width: 100%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+}
+.slider-img2{
+    background-image: url('../images/car6.webp');
+    @extend .slider-img
+}
+.slider-img3{
+    background-image: url('../images/car3.webp');
+    @extend .slider-img
+}
+.slider-img4{
+    background-image: url('../images/car6.webp');
+    @extend .slider-img
+}
+.slider-img5{
+    background-image: url('../images/car4.webp');
+    @extend .slider-img
 }
 .car-info{
     font-size: 17px;
     margin-top: 10px;
+    text-align: center;
+    margin-left: 91px;
 }
-.icon-1{
-    margin-left: 95px;
-}
+// .icon-1{
+//     margin-left: 95px;
+// }
 .btn-2{
     background: $lightblue;
     border-radius: 3px;
@@ -143,9 +183,21 @@ $lightblue: #1089ff;
 .main-bg-clr{
     padding-bottom: 100px;
 }
+.card{
+    border: none !important;
+}
 .car-card{
     width: 100%;
     margin: 0px 11px;
+}
+.slider-price{
+    margin-left: 145px;
+    color: $lightblue;
+    font-weight: 500;
+}
+.s-text{
+    margin-left: 13px;
+    color: #00000033;
 }
 .slide-indicator{
     position: absolute;
@@ -203,6 +255,7 @@ $lightblue: #1089ff;
 }
 .service-img{
     width: 45%;
+    filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(155deg) brightness(108%) contrast(100%);
 }
 .serv-cntnt{
     width: 65%;
@@ -268,6 +321,17 @@ $lightblue: #1089ff;
         margin-top: -12px;
     }
 }
+.client-indicator{
+    li{
+        background-color: #e6e6e6 !important;
+        width: 13px !important;
+        height: 13px !important;
+        border-radius: 50% !important;
+    }
+    .active{
+        background-color: $lightgreen !important;
+    }
+}
 .main-blog{
     margin-top: 100px;
 }
@@ -275,10 +339,29 @@ $lightblue: #1089ff;
     width: 100%;
     height: 270px;
 }
+.b-img{
+    background-image: url('../images/blog1.webp');
+    width: 100%;
+    background-position: center;
+    height: 270px;
+    background-size: cover;
+}
+.b-img2{
+    background-image: url('../images/blog2.webp');
+    @extend .b-img
+}
+.b-img3{
+   background-image: url('../images/blog3.webp');
+   @extend .b-img
+}
 .blog-info{
     padding: 0px 10px;
     color: $lightblue;
     font-weight: 700;
+}
+.b-info{
+    margin-top: 4px;
+    filter: invert(39%) sepia(99%) saturate(2435%) hue-rotate(193deg) brightness(101%) contrast(101%);
 }
 .blog-date{
     margin-left: -10px;
@@ -300,7 +383,13 @@ $lightblue: #1089ff;
 .last-info{
     padding: 100px 136px;
 }
-
+.cmnt{
+    margin-left: -7px;
+    font-size: 12px;
+    margin-top: 3px;
+    font-weight: 700;
+    color: $lightblue;
+}
 .last-sec-info{
    font-size: 20px;
    margin-left: 10px;
@@ -504,6 +593,12 @@ textarea{
     top: 80px;
     padding: 35px 0px;
 }
+.m-price{
+    margin-left: -7px;
+}
+.m-price2{
+    margin-left: -16px;
+}
 .p-btn{
     margin-top: 51px;
     margin-left: 38px;
@@ -557,6 +652,10 @@ textarea{
     position: absolute;
     left: 45px;
 }
+.sign2{
+    left: 33px;
+    @extend .sign
+}
 .time{
     font-size: 14px;
 }
@@ -587,6 +686,15 @@ textarea{
 .car-red-price{
     margin-top: 89px;
     margin-left: 143px;
+    position: relative;
+}
+.car-red-price::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ececec;
+    top: 141px;
+    width: 459px;
+    left: -25px;
 }
 .hour-rate{
     margin-left: -98px;
@@ -598,6 +706,42 @@ textarea{
 .car-white-price{
     margin-top: 32px;
     margin-left: 144px;
+    position: relative;
+}
+.car-white-price::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ececec;
+    top: 131px;
+    width: 459px;
+    left: -25px;
+}
+.price-3::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ececec;
+    top: 140px;
+    width: 459px;
+    left: -25px;
+}
+.price-5::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ececec;
+    top: 120px;
+    width: 459px;
+    left: -25px;
+}
+.price-6{
+    margin-top: 20px;
+}
+.price-6::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ececec;
+    top: 138px;
+    width: 459px;
+    left: -25px;
 }
 .price-head{
     margin-top: 30px;
@@ -605,7 +749,7 @@ textarea{
 }
 .scroll{
     overflow-x: scroll;
-    width: 74%;
+    width: 82%;
     margin-top: 70px;
-    margin-left: 211px;
+    margin-left: 130px;
 }
