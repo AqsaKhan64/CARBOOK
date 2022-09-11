@@ -7,9 +7,12 @@ $white: white;
 $lightblue: #1089ff;
 .main-nav{
     margin-top: 20px;
-    // position: relative;
     a{
         color: #01d28e;
+        font-size: 14px;
+    }
+    a:hover{
+        color: $lightgreen !important;
     }
     .logo{
         color: $lightgreen;
@@ -17,6 +20,9 @@ $lightblue: #1089ff;
     li{
         padding: 5px 15px;
     }
+}
+.video-hide{
+    display: none;
 }
 .carousel-indicators{
     button{
@@ -84,7 +90,11 @@ $lightblue: #1089ff;
     }
     input::placeholder
     {
-        color: white;
+        color: #ffffffb3;
+        font-size: 12px;
+    }
+    .lbl{
+        font-size: 13px !important;
     }
     input:focus{
         background-color: transparent;
@@ -115,7 +125,8 @@ $lightblue: #1089ff;
 }
 .frm2-head{
     padding-top: 55px;
-    padding-left: 57px;
+    padding-left: 70px;
+    font-size: 25px;
 }
 .main-icon{
     border: 1px solid #0000000d;
@@ -156,12 +167,10 @@ $lightblue: #1089ff;
 .car-info{
     font-size: 17px;
     margin-top: 10px;
+    width: 69%;
     text-align: center;
-    margin-left: 91px;
+    margin-left: 75px;
 }
-// .icon-1{
-//     margin-left: 95px;
-// }
 .btn-2{
     background: $lightblue;
     border-radius: 3px;
@@ -170,7 +179,7 @@ $lightblue: #1089ff;
 }
 .card-btn{
     background: $lightblue;
-    padding: 8px 30px;
+    padding: 8px 24px;
 }
 .card-btn2{
     background: $lightgreen;
@@ -178,7 +187,6 @@ $lightblue: #1089ff;
 }
 .car2{
     height: 230px;
-    // width: 90%;
 }
 .main-bg-clr{
     padding-bottom: 100px;
@@ -191,7 +199,7 @@ $lightblue: #1089ff;
     margin: 0px 11px;
 }
 .slider-price{
-    margin-left: 145px;
+    margin-left: 134px;
     color: $lightblue;
     font-weight: 500;
 }
@@ -208,10 +216,12 @@ $lightblue: #1089ff;
 }
 .car-head{
     color: $lightblue;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 .about-main{
     position: relative;
-    // margin-top: 100px;
 }
 .about-car{
     background: $lightgreen;
@@ -234,7 +244,7 @@ $lightblue: #1089ff;
 }
 .about-btn{
     background: $lightblue;
-    padding: 15px 25px;
+    padding: 15px;
     border-radius: 5px;
 }
 .main-serv-img{
@@ -245,20 +255,23 @@ $lightblue: #1089ff;
     border-radius: 50%;
     text-align: center;
     padding: 30px 0px;
-    margin-left: 40px;
+    margin-left: 63px;
 }
 .main-serv{
-    margin-left: 170px;
+    margin-left: 130px;
 }
 .serv-head{
-    font-size: 20px;
+    font-size: 18px;
 }
 .service-img{
-    width: 45%;
+    width: 37%;
     filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(155deg) brightness(108%) contrast(100%);
 }
 .serv-cntnt{
-    width: 65%;
+    width: 77%;
+}
+.main-head{
+    margin-top: 115px;
 }
 .sec6{
     margin-top: 100px;
@@ -294,7 +307,7 @@ $lightblue: #1089ff;
 }
 .sec6-btn2{
     background-color: $lightblue;
-    padding: 10px;
+    padding: 8px 10px;
     border-radius: 5px;
 }
 .cstmer{
@@ -312,6 +325,8 @@ $lightblue: #1089ff;
     .client-info{
         width: 97%;
     margin-top: 20px;
+    color: #999;
+    font-size: 15px;
     }
     .client-name{
         font-weight: 500;
@@ -356,8 +371,11 @@ $lightblue: #1089ff;
 }
 .blog-info{
     padding: 0px 10px;
-    color: $lightblue;
-    font-weight: 700;
+    color: #007bffab;
+    font-weight: 500;
+}
+.blog-info:hover{
+    color: #999;
 }
 .b-info{
     margin-top: 4px;
@@ -366,13 +384,16 @@ $lightblue: #1089ff;
 .blog-date{
     margin-left: -10px;
 }
+.blog-date:hover{
+    color: #999;
+}
 .blog-para{
     font-size: 20px;
     font-weight: 500;
 }
 .blog-btn{
     background-color: $lightblue;
-    padding: 7px 15px;
+    padding: 7px 10px;
     border-radius: 5px;
     margin-left: -10px;
 }
@@ -387,12 +408,14 @@ $lightblue: #1089ff;
     margin-left: -7px;
     font-size: 12px;
     margin-top: 3px;
+    color: #007bffab;
     font-weight: 700;
-    color: $lightblue;
 }
 .last-sec-info{
-   font-size: 20px;
-   margin-left: 10px;
+    font-size: 15px;
+    margin-left: 13px;
+    margin-top: 9px;
+    color: #999;
 }
 .main-last-sec{
     margin: 100px 60px;
@@ -407,7 +430,7 @@ $lightblue: #1089ff;
     color: $lightgreen;
 }
 .fot-info{
-    width: 80%;
+    width: 93%;
 }
 .main-fot-icon{
     margin-top: 50px;
@@ -421,13 +444,11 @@ $lightblue: #1089ff;
 }
 .fot-icon{
     border-radius: 50%;
-    // border: 1px solid white;
     background: rgba(255,255,255,.05);
     width: 47px;
     height: 47px;
     font-size: 20px;
     padding: 13px 14px;
-    // margin: 10px;
 }
 .fot-icon2{
     padding: 12px 16px;
@@ -439,6 +460,14 @@ $lightblue: #1089ff;
 .cntct1{
     width: 60%;
     margin-left: 20px;
+}
+.add{
+    margin-left: 23px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.c-head{
+    font-size: 13px;
 }
 // Css of cars Page
 .car-pg-ban::before{
@@ -462,9 +491,62 @@ $lightblue: #1089ff;
     .card{
         border: none;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        width: 320px;
-    // height: 354px;
+        width: 335px;
     }
+}
+.c-1{
+    background-image: url('../images/car6.webp');
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width: 100%;
+}
+.c-2{
+    background-image: url('../images/car3.webp');
+    @extend .c-1
+}
+.c-3{
+    background-image: url('../images/car4.webp');
+    @extend .c-1
+}
+.c-4{
+    background-image: url('../images/car5.webp');
+    @extend .c-1
+}
+.c-5{
+    background-image: url('../images/car-blue.webp');
+    @extend .c-1
+}
+.c-6{
+    background-image: url('../images/car-red.webp');
+    @extend .c-1
+}
+.c-7{
+    background-image: url('../images/car7.webp');
+    @extend .c-1
+}
+.c-8{
+    background-image: url('../images/car8.webp');
+    @extend .c-1
+}
+.c-9{
+    background-image: url('../images/car9.webp');
+    @extend .c-1
+}
+.c-10{
+    background-image: url('../images/car10.webp');
+    @extend .c-1
+}
+.c-11{
+    background-image: url('../images/car11.webp');
+    @extend .c-1
+}
+.c-12{
+    background-image: url('../images/car12.webp');
+    @extend .c-1
+}
+.s-text1{
+    color: #00000033;
 }
 .car-card-btn{
     padding: 8px 14px;
@@ -485,7 +567,7 @@ $lightblue: #1089ff;
 }
 .cards-clr{
     padding-top: 80px;
-    margin-top: -20px;
+    margin-top: -87px;
     padding-bottom: 50px;
 }
 .pg-link{
@@ -493,18 +575,13 @@ $lightblue: #1089ff;
     margin: 7px;
 }
 .pg-link1{
-    border-radius: 50%;
+    border-radius: 50% !important;
     margin: 7px;
 }
-// .pg-active{
-//     background-color: $lightblue;
-// }
-.page-item{
-    .pg-active{
-        background: $lightblue;
-        color: white;
+.pg-active{
+        background: $lightblue !important;
+        color: white !important;
     }
-}
 // css of contact page
 .main-cntct{
     border: 1px solid #ced4da;
@@ -524,9 +601,17 @@ $lightblue: #1089ff;
     .form-control{
         padding: 12px;
     }
+    input:focus{
+        box-shadow: none;
+        outline: none;
+    }
 }
 textarea{
     border: 1px solid #ced4da;
+}
+textarea:focus{
+    box-shadow: none !important;
+        outline: none !important;
 }
 .frm-btn{
     background: $lightblue;
@@ -546,7 +631,6 @@ textarea{
 .cntct-icon{
     color: $lightblue;
     margin-top: 8px;
-    // margin-left: -10px;
 }
 .cntct-info{
     margin-left: 10px;
@@ -650,10 +734,10 @@ textarea{
 .sign{
     font-size: 13px;
     position: absolute;
-    left: 45px;
+    left: 38px;
 }
 .sign2{
-    left: 33px;
+    left: 24px;
     @extend .sign
 }
 .time{
@@ -680,7 +764,7 @@ textarea{
     @extend .sub-price-card
 }
 .pricing-info{
-    margin-top: 116px;
+    margin-top: 122px;
     margin-left: 30px;
 }
 .car-red-price{
@@ -752,4 +836,8 @@ textarea{
     width: 82%;
     margin-top: 70px;
     margin-left: 130px;
+}
+.size{
+    font-size: 18px;
+    font-weight: 400;
 }

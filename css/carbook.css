@@ -5,11 +5,17 @@ body {
 .main-nav {
   margin-top: 20px; }
   .main-nav a {
-    color: #01d28e; }
+    color: #01d28e;
+    font-size: 14px; }
+  .main-nav a:hover {
+    color: #01d28e !important; }
   .main-nav .logo {
     color: #01d28e; }
   .main-nav li {
     padding: 5px 15px; }
+
+.video-hide {
+  display: none; }
 
 .carousel-indicators button {
   background-color: #e6e6e6 !important;
@@ -73,7 +79,10 @@ body {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.1); }
   .main-form input::placeholder {
-    color: white; }
+    color: #ffffffb3;
+    font-size: 12px; }
+  .main-form .lbl {
+    font-size: 13px !important; }
   .main-form input:focus {
     background-color: transparent;
     outline: none;
@@ -99,7 +108,8 @@ body {
 
 .frm2-head {
   padding-top: 55px;
-  padding-left: 57px; }
+  padding-left: 70px;
+  font-size: 25px; }
 
 .main-icon {
   border: 1px solid #0000000d;
@@ -136,8 +146,9 @@ body {
 .car-info {
   font-size: 17px;
   margin-top: 10px;
+  width: 69%;
   text-align: center;
-  margin-left: 91px; }
+  margin-left: 75px; }
 
 .btn-2 {
   background: #1089ff;
@@ -147,7 +158,7 @@ body {
 
 .card-btn, .car-card-btn {
   background: #1089ff;
-  padding: 8px 30px; }
+  padding: 8px 24px; }
 
 .card-btn2, .car-card-btn2 {
   background: #01d28e;
@@ -167,7 +178,7 @@ body {
   margin: 0px 11px; }
 
 .slider-price {
-  margin-left: 145px;
+  margin-left: 134px;
   color: #1089ff;
   font-weight: 500; }
 
@@ -183,7 +194,10 @@ body {
   margin-top: 50px; }
 
 .car-head {
-  color: #1089ff; }
+  color: #1089ff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px; }
 
 .about-main {
   position: relative; }
@@ -209,7 +223,7 @@ body {
 
 .about-btn {
   background: #1089ff;
-  padding: 15px 25px;
+  padding: 15px;
   border-radius: 5px; }
 
 .main-serv-img {
@@ -220,20 +234,23 @@ body {
   border-radius: 50%;
   text-align: center;
   padding: 30px 0px;
-  margin-left: 40px; }
+  margin-left: 63px; }
 
 .main-serv {
-  margin-left: 170px; }
+  margin-left: 130px; }
 
 .serv-head {
-  font-size: 20px; }
+  font-size: 18px; }
 
 .service-img {
-  width: 45%;
+  width: 37%;
   filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(155deg) brightness(108%) contrast(100%); }
 
 .serv-cntnt {
-  width: 65%; }
+  width: 77%; }
+
+.main-head {
+  margin-top: 115px; }
 
 .sec6 {
   margin-top: 100px;
@@ -269,7 +286,7 @@ body {
 
 .sec6-btn2 {
   background-color: #1089ff;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 5px; }
 
 .cstmer {
@@ -285,7 +302,9 @@ body {
     border-radius: 50%; }
   .cstmer-card .client-info {
     width: 97%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #999;
+    font-size: 15px; }
   .cstmer-card .client-name {
     font-weight: 500;
     font-size: 20px; }
@@ -323,8 +342,11 @@ body {
 
 .blog-info {
   padding: 0px 10px;
-  color: #1089ff;
-  font-weight: 700; }
+  color: #007bffab;
+  font-weight: 500; }
+
+.blog-info:hover {
+  color: #999; }
 
 .b-info {
   margin-top: 4px;
@@ -333,13 +355,16 @@ body {
 .blog-date {
   margin-left: -10px; }
 
+.blog-date:hover {
+  color: #999; }
+
 .blog-para {
   font-size: 20px;
   font-weight: 500; }
 
 .blog-btn {
   background-color: #1089ff;
-  padding: 7px 15px;
+  padding: 7px 10px;
   border-radius: 5px;
   margin-left: -10px; }
 
@@ -354,12 +379,14 @@ body {
   margin-left: -7px;
   font-size: 12px;
   margin-top: 3px;
-  font-weight: 700;
-  color: #1089ff; }
+  color: #007bffab;
+  font-weight: 700; }
 
 .last-sec-info {
-  font-size: 20px;
-  margin-left: 10px; }
+  font-size: 15px;
+  margin-left: 13px;
+  margin-top: 9px;
+  color: #999; }
 
 .main-last-sec {
   margin: 100px 60px; }
@@ -374,7 +401,7 @@ body {
   color: #01d28e; }
 
 .fot-info {
-  width: 80%; }
+  width: 93%; }
 
 .main-fot-icon {
   margin-top: 50px; }
@@ -404,6 +431,14 @@ body {
   width: 60%;
   margin-left: 20px; }
 
+.add {
+  margin-left: 23px;
+  font-weight: 600;
+  font-size: 15px; }
+
+.c-head {
+  font-size: 13px; }
+
 .car-pg-ban::before {
   background-image: url("../images/car2.webp");
   background-attachment: fixed;
@@ -424,7 +459,50 @@ body {
 .main-car-card .card {
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  width: 320px; }
+  width: 335px; }
+
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12 {
+  background-image: url("../images/car6.webp");
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  width: 100%; }
+
+.c-2 {
+  background-image: url("../images/car3.webp"); }
+
+.c-3 {
+  background-image: url("../images/car4.webp"); }
+
+.c-4 {
+  background-image: url("../images/car5.webp"); }
+
+.c-5 {
+  background-image: url("../images/car-blue.webp"); }
+
+.c-6 {
+  background-image: url("../images/car-red.webp"); }
+
+.c-7 {
+  background-image: url("../images/car7.webp"); }
+
+.c-8 {
+  background-image: url("../images/car8.webp"); }
+
+.c-9 {
+  background-image: url("../images/car9.webp"); }
+
+.c-10 {
+  background-image: url("../images/car10.webp"); }
+
+.c-11 {
+  background-image: url("../images/car11.webp"); }
+
+.c-12 {
+  background-image: url("../images/car12.webp"); }
+
+.s-text1 {
+  color: #00000033; }
 
 .car-card-btn {
   padding: 8px 14px;
@@ -443,7 +521,7 @@ body {
 
 .cards-clr {
   padding-top: 80px;
-  margin-top: -20px;
+  margin-top: -87px;
   padding-bottom: 50px; }
 
 .pg-link {
@@ -451,12 +529,12 @@ body {
   margin: 7px; }
 
 .pg-link1 {
-  border-radius: 50%;
+  border-radius: 50% !important;
   margin: 7px; }
 
-.page-item .pg-active {
-  background: #1089ff;
-  color: white; }
+.pg-active {
+  background: #1089ff !important;
+  color: white !important; }
 
 .main-cntct {
   border: 1px solid #ced4da;
@@ -475,8 +553,16 @@ body {
 .frm-input .form-control {
   padding: 12px; }
 
+.frm-input input:focus {
+  box-shadow: none;
+  outline: none; }
+
 textarea {
   border: 1px solid #ced4da; }
+
+textarea:focus {
+  box-shadow: none !important;
+  outline: none !important; }
 
 .frm-btn {
   background: #1089ff;
@@ -591,10 +677,10 @@ textarea {
 .sign, .sign2 {
   font-size: 13px;
   position: absolute;
-  left: 45px; }
+  left: 38px; }
 
 .sign2 {
-  left: 33px; }
+  left: 24px; }
 
 .time {
   font-size: 14px; }
@@ -615,7 +701,7 @@ textarea {
   top: 835px; }
 
 .pricing-info {
-  margin-top: 116px;
+  margin-top: 122px;
   margin-left: 30px; }
 
 .car-red-price {
@@ -687,3 +773,7 @@ textarea {
   width: 82%;
   margin-top: 70px;
   margin-left: 130px; }
+
+.size {
+  font-size: 18px;
+  font-weight: 400; }
